@@ -4,9 +4,11 @@ div.gallery {
     float: left;
     width: 180px;
     box-sizing: border-box;
+    background-color: rgb(229, 229, 229);
   }
 div.gallery:hover {
     border: 1px solid #777;
+    background-color: rgb(4, 4, 4);
   }
   
 div.gallery img {
@@ -17,8 +19,20 @@ div.desc {
     padding: 0px;
     text-align: center;
   }
-h1{
+h1.title{
   text-align: center;
   border: 2px solid black;
   border-radius: 10px;
+  box-shadow: 11px 13px 24px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 11px 13px 24px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 13px 24px 0px rgba(0,0,0,0.75);
+box-sizing: border-box;
+width: fit-content;
+padding-left: 20px;
+padding-right: 20px;
+margin: auto;
+margin-bottom: 50px;
+}
+body{
+  background-color: #777;
 }
