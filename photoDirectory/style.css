@@ -1,0 +1,26 @@
+h1.pSiteTitle{
+    text-align: center;
+}
+div.titleBox{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 14px 35px 4px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 10px 14px 35px 4px rgba(0,0,0,0.68);
+    -moz-box-shadow: 10px 14px 35px 4px rgba(0,0,0,0.68);
+}
+ol.siteDirectoryList{
+    text-align: center;
+}
+div.siteDirectoryDiv{
+    border: 1px solid black;
+    align-items: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 10px 14px 35px 4px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 10px 14px 35px 4px rgba(0,0,0,0.68);
+    -moz-box-shadow: 10px 14px 35px 4px rgba(0,0,0,0.68);
+    background-image: linear-gradient(rgb(158, 158, 164), rgb(241, 238, 238));
+}
