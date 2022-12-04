@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <h1>video gallery</h1>
+
+      <div class="video-container">
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/LightsalmonImpossibleXraytetra.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/25502811a.webm"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/37865431a.webm"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/38480641a.webm"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/PositiveVitalAlaskankleekai-mobile.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/RepentantFoolishPlanthopper-mobile.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/RoyalblueQuickRobberfly-mobile.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/SarcasticMundaneBorzoi-mobile.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/SpicyAltruisticEyelashpitviper-mobile.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/TerribleIllinformedUrva-mobile.mp4"
+            muted
+          ></video>
+        </div>
+        <div class="video">
+          <video
+            src="../videoDirectory/videoFiles/ThunderousPalegreenSkink-mobile.mp4"
+            muted
+          ></video>
+        </div>
+      </div>
+
+      <div class="popup-video">
+        <span>&times;</span>
+        <video
+          src="../videoDirectory/videoFiles/LightsalmonImpossibleXraytetra.mp4"
+          muted
+          autoplay
+          controls
+        ></video>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".video-container video").forEach((vid) => {
+        vid.onclick = () => {
+          document.querySelector(".popup-video").style.display = "block";
+          document.querySelector(".popup-video video").src =
+            vid.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-video span").onclick = () => {
+        document.querySelector(".popup-video").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
